@@ -21,4 +21,5 @@ def get_password(min_length):
         password = input("Please enter a password: ")
     return password
 
+
 main()

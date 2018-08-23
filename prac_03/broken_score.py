@@ -11,11 +11,11 @@ def main():
         print("Invalid score")
         score = float(input("Enter score: "))
 
-    result = result_definer(score)
+    result = determine_results(score)
     print(result)
 
 
-def result_definer(score):
+def determine_results(score):
     if score >= 90:
         result = "Excellent"
     elif score >= 50:
