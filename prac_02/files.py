@@ -16,6 +16,6 @@ for line in number_file:
     line = line.strip()
     numbers.append(int(line))
 
-print("The numbers are {}".format(numbers[:]))
-total = sum(numbers[:])
+print("The numbers are {}".format(numbers))
+total = sum(numbers)
 print("The total is {}".format(total))
