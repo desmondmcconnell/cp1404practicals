@@ -1,3 +1,6 @@
+"""Hex Numbers Display"""
+
+
 HEX_COLOURS = {"moccasin": "#ffe4b5", "ivory2": "#eeeee0", "PaleGreen": "#98fb98", "rebeccapurple": "#663399",
              "thistle": "#d8bfd8", "gold1": "#ffd700", "chartreuse2": "#76ee00", "brown": "#a52a2a",
              "DeepPink3": "#cd1076", "gray64": "#a3a3a3"}

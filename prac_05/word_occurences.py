@@ -1,3 +1,6 @@
+"""Word Occurences Calculator"""
+
+
 def main():
     string = input("Please enter a string:")
     print("Text: {}".format(string))
