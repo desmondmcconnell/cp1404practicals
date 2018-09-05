@@ -5,11 +5,11 @@ def main():
     string = input("Please enter a string:")
     print("Text: {}".format(string))
     words = sorted(string.split(" "))
-    words_counts = generate_dictionary(words)
+    words_counts = count_words(words)
     print_dictionary(words_counts, words)
 
 
-def generate_dictionary(words):
+def count_words(words):
     words_counts = {}
     for word in words:
         if word in words_counts:
