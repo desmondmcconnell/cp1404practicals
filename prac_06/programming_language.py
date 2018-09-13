@@ -11,7 +11,4 @@ class ProgrammingLanguage:
                "First appeared in {self.year}".format(self=self)
 
     def is_dynamic(self):
-        if self.typing == "Dynamic":
-            return True
-        return False
-
+        return self.typing == "Dynamic"
