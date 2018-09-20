@@ -13,27 +13,22 @@ class MilesToKilometresConverter(App):
         return self.root
 
     def handle_increment(self, value, miles_input):
-        finished = False
-        while not finished:
-            try:
-                result = float(miles_input.text) + value
-                finished = True
-            except(ValueError):
-                miles_input.text = "0.0"
+        result = self.get_valid_miles(miles_input.text) + value
         if result < 0:
             result = 0.0
         miles_input.text = "{}".format(result)
 
     def handle_conversion(self, miles_input, display_label):
-        finished = False
-        while not finished:
-            try:
-                kilometres = float(miles_input.text) * MILES_TO_KM
-                finished = True
-            except(ValueError):
-                miles_input.text = "0.0"
-        # kilometres = str(float(miles_input.text) * 1.60934)
-        display_label.text = "{:.5}".format(kilometres)
+        value = self.get_valid_miles(miles_input.text)
+        kilometres = value * MILES_TO_KM
+        display_label.text = str(kilometres)
+
+    def get_valid_miles(self, miles_input):
+        try:
+            value = float(miles_input)
+            return value
+        except ValueError:
+            return 0
 
 
 MilesToKilometresConverter().run()

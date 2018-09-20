@@ -5,6 +5,7 @@ BoxLayout:
         TextInput:
             id: number_input
             text: '1.0'
+            on_text: app.handle_conversion(number_input, output_label)
         BoxLayout:
             orientation: "vertical"
             Button:
@@ -15,10 +16,10 @@ BoxLayout:
                 id: down_button
                 text: "Down"
                 on_press: app.handle_increment(-1, number_input)
-    Button:
-        id: convert_button
-        text: "Convert miles to km"
-        on_press: app.handle_conversion(number_input, output_label)
+#    Button:
+#        id: convert_button
+#        text: "Convert miles to km"
+#        on_press: app.handle_conversion(number_input, output_label)
     Label:
         id: output_label
         text: "1.6093"
