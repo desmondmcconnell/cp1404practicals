@@ -6,6 +6,8 @@ BoxLayout:
             id: number_input
             text: '1.0'
             on_text: app.handle_conversion(number_input, output_label)
+            size_hint_x: 3
+            font_size: 48
         BoxLayout:
             orientation: "vertical"
             Button:
@@ -22,4 +24,6 @@ BoxLayout:
 #        on_press: app.handle_conversion(number_input, output_label)
     Label:
         id: output_label
-        text: "1.6093"
+        text: "1.60934"
+        color: (1, 1, 0, 1)
+        font_size: 48
