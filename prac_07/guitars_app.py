@@ -12,7 +12,7 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.button import Button
 from kivy.properties import StringProperty
-from guitar import Guitar
+from prac_07.guitar import Guitar
 
 DISCOUNT_RATE = 0.9
 

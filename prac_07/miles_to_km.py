@@ -25,9 +25,9 @@ class MilesToKilometresConverter(App):
         kilometres = value * MILES_TO_KM
         display_label.text = str(kilometres)
 
-    def get_valid_miles(self, miles_input):
+    def get_valid_miles(self, miles):
         try:
-            value = float(miles_input)
+            value = float(miles)
             return value
         except ValueError:
             return 0
