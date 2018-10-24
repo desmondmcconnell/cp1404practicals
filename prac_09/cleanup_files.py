@@ -18,9 +18,7 @@ def get_fixed_filename(filename):
         if character.isupper() and previous_character.isalpha():
             string += "_"
         if not previous_character.isalpha():
-            if previous_character == "'":
-                pass
-            else:
+            if not previous_character == "'":
                 character = character.upper()
         string += character
         previous_character = character

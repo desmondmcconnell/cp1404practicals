@@ -33,10 +33,6 @@ def demo_walk():
     sort_dict = {}
     os.chdir('FilesToSort')
     for directory_name, subdirectories, file_names in os.walk('.'):
-        print("Directory:", directory_name)
-        print("\tcontains subdirectories:", subdirectories)
-        print("\tand files:", file_names)
-        print("(Current working directory is: {})".format(os.getcwd()))
         for file_name in file_names:
             file_name = os.path.join(directory_name, file_name)
             file_type = get_file_type(file_name)
