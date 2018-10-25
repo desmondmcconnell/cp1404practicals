@@ -45,3 +45,15 @@ def do_something_else(n):
 
 
 do_something_else(4)
+
+
+number = int(input("Please enter a number:"))
+
+
+def create_pyramid_scheme(n):
+    if n < 2:
+        return 1
+    return n + create_pyramid_scheme(n-1)
+
+
+print("{} blocks required to build {} layer pyramid".format(create_pyramid_scheme(number), number))
